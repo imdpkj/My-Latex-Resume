@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.5, 1 December 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{SquidInk}{HTML}{172B4D}
+\definecolor{PacificBridge}{HTML}{0052CC}
+\definecolor{Slate}{HTML}{091E42}
+\definecolor{BlingBling}{HTML}{6B778C}
+\definecolor{Darkest}{HTML}{000000}
+\definecolor{Link}{HTML}{0052CC}
+\colorlet{heading}{PacificBridge}
+\colorlet{accent}{PacificBridge}
+\colorlet{ring}{Darkest}
+\colorlet{emphasis}{Slate}
+\colorlet{body}{BlingBling}
+\colorlet{link}{Link}
+\colorlet{ring}{SquidInk}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+\hypersetup{hidelinks, colorlinks, allcolors=Link}
+
+\begin{document}
+\name{Deepak Jangid}
+\tagline{Senior Software Engineer}
+\personalinfo{%
+\email{\href{mailto:jangid.d@gmail.com}{jangid.d@gmail.com}}
+\phone{\href{tel:+919871989647}{+91-98719 89647}}
+\bitbucket{\href{https://bitbucket.org/imdpkj}{bitbucket.org/imdpkj}}
+\atlassiancommunity{\href{https://community.atlassian.com/t5/user/viewprofilepage/user-id/690016}{dpkj@community.atlassian.com}}
+\github{\href{https://github.com/imdpkj}{github.com/imdpkj}}
+}
+
+
+\begin{fullwidth}
+\makecvheader
+\cvsection{Summary}
+I'm an engineer with \cvemph{10+ years of experience in product development, delivery and maintenance}.  I spent most of the career writing bug-free software in a fast-paced startup environment using multiple technologies. I believe that with better software, we can delegate most of our work to machines, and focus on business and social empowerment.
+\end{fullwidth}
+
+
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Senior Software Engineer}{Optimizory Technologies Private Limited}{July 2009 -- Ongoing}{Noida}
+\begin{itemize}
+\item Foremost, write and maintain clean code
+\item Manage product delivery
+\item Maintain in-house software and hardware resources
+\item Help new developers write better software
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvproject{RMsis - Requirement Management for Jira}{https://optimizory.com/products/rmsis}
+\begin{itemize}
+\item Organize and capture requirements with \emph{version}, \emph{baseline}, \emph{release} and \emph{hierarchy} in tabular manner
+\item Customers spanning from defence, aerospace, to healthcare
+\item \cvemph{Java}, \cvemph{Hibernate}, \cvemph{Spring}, \cvemph{GraphQL}, \cvemph{Atlassian SDK}, \cvemph{YUI}
+\end{itemize}
+
+\divider
+
+\cvproject{Links Explorer}{https://optimizory.com/products/lxp}
+\begin{itemize}
+\item Jira plugin to manage end to end Traceability
+\item Available for all format of Jira \emph{i.e.} Cloud, Server and Data Center
+\item \cvemph{Java}, \cvemph{React}, \cvemph{Atlassian SDK}, \cvemph{AWS}
+\end{itemize}
+
+\divider
+
+\cvproject{Optimizory CRM}{https://crm.optimizory.com}
+\begin{itemize}
+\item Manage customer with follow up, feedback and product purchase
+\item Conversation analysis and profiling with privacy
+\item \cvemph{PHP}, \cvemph{Symphony}, and \cvemph{MySQL}
+\end{itemize}
+
+\divider
+
+\cvproject{Pact - Contract Management}{https://marketplace.atlassian.com/apps/1221110/pact-contract-management}
+\begin{itemize}
+\item App to manage contracts in Jira Cloud
+\item \cvemph{VueJS}, \cvemph{AWS}
+\end{itemize}
+
+%\medskip
+
+%\cvsection{Other Projects}
+
+\divider
+
+\cvproject{Microsoft Word Add-in for RMsis}
+{https://appsource.microsoft.com/en-us/product/office/WA200001155}
+\begin{itemize}
+    \item Helps you generate customized RMsis report in MS Word.
+    \item \cvemph{React}, \cvemph{AWS}, \cvemph{Office API}, \cvemph{UI Fabric}
+\end{itemize}
+
+\divider
+
+
+
+
+\cvproject{Confluence plugin for RMsis}
+{https://docs.optimizory.com/x/AoBk}
+\begin{itemize}
+\item Export RMsis data to Confluence harnessing Jira application link
+\item With lazy, live and static reporting
+\item \cvemph{Java}, \cvemph{Atlassian SDK}
+\end{itemize}
+
+\divider
+
+\cvproject{Jenkins plugin for RMsis}
+{https://docs.optimizory.com/x/xQfX}
+\begin{itemize}
+\item Jenkins plugin to automatically update test runs in RMsis.
+\item Introduces new post build step
+\item \cvemph{Java}, \cvemph{Jenkins SDK}
+\end{itemize}
+
+
+\divider
+
+\cvproject{Simply Sprint}{}
+\begin{itemize}
+\item Internal Jira add-on to maintain sprints
+\item \cvemph{Java}, \cvemph{Atlassian SDK}
+\end{itemize}
+
+\clearpage
+
+\cvsection[page2sidebar]{Other Projects}
+
+\cvproject{OHM - Organizational Hierarchy Management}{}
+\begin{itemize}
+\item Single Sign On solution with organizational hierarchy
+\item Tree based user groups, roles and titles management
+\item \cvemph{PHP}, \cvemph{Symphony}, \cvemph{YUI}
+\end{itemize}
+
+\divider
+
+\cvproject{RMP - Risk Management Platform}{}
+\begin{itemize}
+\item Online assessment based risk analysis of project and product
+\item \cvemph{PHP}, \cvemph{LAMP}
+\end{itemize}
+
+\divider
+
+\cvproject{Multi-site social platform}{}
+\begin{itemize}
+\item Customize able multiple domain social site
+\item Micro blogging, blogging, messaging, and connecting
+\item \cvemph{PHP}, \cvemph{Wordpress}
+\end{itemize}
+
+
+\medskip
+
+\cvsection{A Day of My Life}
+
+\wheelchart{1.2cm}{0.5cm}{%
+  6/8em/ring!30/Sleep,
+  3/8em/ring!40/Learn new stuff,
+  8/8em/ring!60/Daytime job,
+  2/10em/ring/Gym and relaxation,
+  5/8em/ring!20/{Family, community and more}
+}%
+
+
+\end{document}
